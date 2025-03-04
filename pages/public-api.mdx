@@ -1,14 +1,14 @@
 ---
 title: Public API
-description: "How to use Postiz public API"
+description: "How to use Publica public API"
 ---
 
-## Public API allows you to work with Postiz in headless mode
+## Public API allows you to work with Publica in headless mode
 
-To use the Public API, go to Postiz settings and copy the API Key.<br />
+To use the Public API, go to Publica settings and copy the API Key.<br />
 With each request you need to pass the API Key in the header `Authorization: {apiKey}`.<br />
-If you are using the hosted version of Postiz the URL will be `https://api.postiz.com/public/v1`.<br />
-If you are self-hosting Postiz the URL will be `https://{NEXT_PUBLIC_BACKEND_URL}/public/v1`.<br /><br />
+If you are using the hosted version of Publica the URL will be `https://api.publica.com/public/v1`.<br />
+If you are self-hosting Publica the URL will be `https://{NEXT_PUBLIC_BACKEND_URL}/public/v1`.<br /><br />
 
 <u>There is a limit of **30** requests per hours.</u>
 <br />
@@ -19,7 +19,7 @@ Here are the following API endpoints you can use:
 ### Get all added integrations
 
 ```http
-GET https://api.postiz.com/public/v1/integrations
+GET https://api.publica.com/public/v1/integrations
 ```
 
 Response:
@@ -30,7 +30,7 @@ Response:
     "id": "asdfasf2342dsaxfcsf",
     "name": "Nevo David",
     "identifier": "facebook",
-    "picture": "https://upload.postiz.com/picture.png",
+    "picture": "https://upload.publica.com/picture.png",
     "disabled": false,
     "profile": "nevo_david",
     "customer": {
@@ -48,7 +48,7 @@ Response:
 ### Upload a new file (from-data)
 
 ```http
-POST https://api.postiz.com/public/v1/upload
+POST https://api.publica.com/public/v1/upload
 ```
 
 Payload:
@@ -73,7 +73,7 @@ Response:
 ### Post list
 
 ```http
-GET https://api.postiz.com/public/v1/posts
+GET https://api.publica.com/public/v1/posts
 ```
 
 Query:
@@ -118,7 +118,7 @@ Response:
 ### Create / update a post
 
 ```http
-POST https://api.postiz.com/public/v1/posts
+POST https://api.publica.com/public/v1/posts
 ```
 
 Payload:
@@ -166,7 +166,7 @@ Response:
 ### Delete a post
 
 ```http
-DELETE https://api.postiz.com/public/v1/posts/:id
+DELETE https://api.publica.com/public/v1/posts/:id
 ```
 
 Response:
